@@ -1,5 +1,5 @@
-README - Projeto Sorteador de Números
-Sobre o Projeto
+README - Projeto Sorteador de Números,
+Sobre o Projeto:
 Este é um projeto simples de sorteio de números únicos dentro de um intervalo definido pelo usuário. Desenvolvido para praticar e consolidar conceitos fundamentais de JavaScript aprendidos no curso da Alura.
 
 O que eu aprendi
