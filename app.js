@@ -3,14 +3,18 @@ function sortear() {
   let de = parseInt(document.getElementById('de').value);
   let ate = parseInt(document.getElementById('ate').value);
 
-  if (de > ate) {
-    mostrarModal('Ei, cabeça de vento! "Do número" tem que ser menor que "Até o número". Se não, não vai acontecer nada aqui, entendeu?');
-    reiniciar();
+  if (de >= ate) {
+    mostrarModal('“O número inicial precisa ser menor que o final. Verifique!”');
     return;
   }
 
   let sorteados = [];
   let numero;
+
+  if (quantidade > (ate - de + 1)) {
+    mostrarModal('Quantidade maior que o intervalo entre ‘Do número’ e ‘Até o número’. Verifique!');
+    return;
+  }
 
   for (let i = 0; i < quantidade; i++) {
     numero = obterNumeroAleatorio(de, ate);
